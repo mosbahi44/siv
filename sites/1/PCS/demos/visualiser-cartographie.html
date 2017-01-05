@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="International IT Group at the crossroad of Mobile,
+Web and Information Systems convergence.">
+    <meta name="author" content="">
+
+    <!-- Owl Carousel Assets -->
+    <link href="../owl-carousel/owl.carousel.css" rel="stylesheet">
+    <!-- Fancybox Assets -->
+    <link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox.css" media="screen">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+  </head>
+  <body class="pink">
+
+          <div id="map"></div>
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="../assets/js/jquery-1.9.1.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <!-- Owl Carousel -->
+  <script src="../owl-carousel/owl.carousel.min.js"></script>
+  <!-- Fancybox-->
+  <script src="../fancybox/jquery.fancybox.js"></script>
+
+
+  <!--Maps-->
+
+  <script>
+    function initMap() {
+      var myLatLng = {lat: 35.819844, lng: 10.592435};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Eniso!'
+      });
+    }
+
+  </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCalU-eJQM-99XuS-JVneDXv0iph9NXtss&signed_in=true&callback=initMap"></script>
+
+
+  </body>
+</html>
